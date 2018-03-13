@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #This programm demonstrates the stereo illusion
-#coming from playing sinewave with close frequency in different ears
+#coming from playing sinewave with close frequencies in stereo (ie: one sine per ears).
 #To install dependencies
 #pip3 install numpy sounddevice
  
@@ -26,3 +26,10 @@ result = np.hstack((wave.reshape(-1, 1), wave2.reshape(-1,1)))
 wav_wave = np.array(result, dtype=np.int16)
 
 sd.play(wav_wave, blocking=True)
+
+#The following conclusion can be done:
+#When frequency difference is between 1 to 15Hz, a Beat effect is perceived.
+#When it's higher, polyphony is perceived.
+#This phenomena prooves that the brain is adding the two sounds.
+#Beat can be explained by the fact that:
+#cos(2piF0t)+cos(2pi(F0+df)t)=2cos(2pi(F0+df)t)cos(2*pi*(df/2)t)
