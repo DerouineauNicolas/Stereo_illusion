@@ -1,0 +1,2 @@
+https://eu.rubiks.com/blog/how-to-solve-the-rubiks-cube-stage-1
+https://github.com/pahaz/Example-of-MVC-pattern-on-pure-Python-2015
