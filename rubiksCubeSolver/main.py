@@ -1,3 +1,5 @@
 from model import RubiksCube, Color
+from view import print_cube
 
-cube = RubiksCube(Color.White, Color.Yellow, Color.Orange, Color.Red, Color.Green, Color.Blue)
+cube = RubiksCube(Color.W, Color.Y, Color.O, Color.R, Color.G, Color.B)
+print_cube(cube)

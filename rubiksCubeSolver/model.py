@@ -9,13 +9,13 @@ import random
 #
 # ===========================
 
-class Color:
-    White  = 1
-    Yellow = 2
-    Orange = 3
-    Red    = 4
-    Green  = 5
-    Blue   = 6
+class Color(Enum):
+    W   = 1
+    Y   = 2
+    O   = 3
+    R   = 4
+    G   = 5
+    B   = 6
 
 class Face:
     def __init__(self, input_color):
